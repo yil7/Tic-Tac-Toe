@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="editText">Player 1 ID</string>
+    <string name="editText2">Player 2 ID</string>
+    <string name="button_p1">Ready</string>
+    <string name="button_p2">Ready</string>
+</resources>
