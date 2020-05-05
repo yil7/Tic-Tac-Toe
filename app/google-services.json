@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "233629687192",
+    "firebase_url": "https://gameranking-46a24.firebaseio.com",
+    "project_id": "gameranking-46a24",
+    "storage_bucket": "gameranking-46a24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233629687192:android:f1d2fe272d6e2cb2c29fed",
+        "android_client_info": {
+          "package_name": "com.example.tic_tac_toe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233629687192-hd60qi2ha7iu4fu9db314063rus6h4o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcqlv1CC4QFaT07ggyHQLSmchFz_pZbEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233629687192-hd60qi2ha7iu4fu9db314063rus6h4o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
