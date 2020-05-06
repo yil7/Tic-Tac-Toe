@@ -51,19 +51,27 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         textViewPlayer1.setText(player1);
         textViewPlayer2.setText(player2);
 
-        imagePlayer1 = (int)(Math.random() * ((3) + 1));
-        imagePlayer2 = (int)(Math.random() * ((3) + 1));
+        imagePlayer1 = (int)(Math.random() * 10);
+        imagePlayer2 = (int)(Math.random() * 10);
 
         String[] images = new String[10];
-        images[1] = "https://i.imgur.com/EkkDR.jpg";
-        images[2] = "https://i.imgur.com/MBwoG60.png";
-        images[3] = "https://i.imgur.com/Ln3bk3h.jpg";
+        images[0] = "https://i.imgur.com/bS2ga5sb.jpg";
+        images[1] = "https://i.imgur.com/bS2ga5sb.jpg";
+        images[2] = "https://i.imgur.com/EugrcwSb.jpg";
+        images[3] = "https://i.imgur.com/mJJIKV3b.jpg";
+        images[4] = "https://i.imgur.com/HRKOPcSb.jpg";
+        images[5] = "https://i.imgur.com/Wl0Whxnb.jpg";
+        images[6] = "https://i.imgur.com/dxQ6BI4b.jpg";
+        images[7] = "https://i.imgur.com/XVoHO2yb.jpg";
+        images[8] = "https://i.imgur.com/PWOSf7Jb.jpg";
+        images[9] = "https://i.imgur.com/VwfA96eb.jpg";
+
 
         ImageView imagefor1 = findViewById(R.id.image1);
-        Picasso.get().load("https://i.imgur.com/EkkDR.jpg").into(imagefor1);
+        Picasso.get().load(images[imagePlayer1]).resize(200,200).centerCrop().into(imagefor1);
 
         ImageView imagefor2 = findViewById(R.id.image2);
-        Picasso.get().load(images[imagePlayer2]).into(imagefor2);
+        Picasso.get().load(images[imagePlayer2]).resize(200,200).centerCrop().into(imagefor2);
 
 
         for (int i = 0; i < 3; i++) {
@@ -169,8 +177,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void updateScoreText() {
-        textViewPlayer1.setText(player1 + "   "+player1score);
-        textViewPlayer2.setText(player2 + "   "+player2score);
+        textViewPlayer1.setText(player1 + "   "+ player1score);
+        textViewPlayer2.setText(player2score + "   "+ player2);
     }
 
     private void resetBoard() {
